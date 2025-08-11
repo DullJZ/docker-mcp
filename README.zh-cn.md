@@ -1,5 +1,7 @@
 # Docker-MCP
 
+[English](README.md) | 简体中文
+
 Docker-MCP 是一个基于[Docker Manager](https://github.com/DullJZ/docker-manager)的MCP服务器，使用FastMCP框架在Docker Manager的API接口之上构建，提供了对Docker容器的管理功能。
 
 ## 开始使用
