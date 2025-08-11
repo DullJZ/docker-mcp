@@ -1,10 +1,10 @@
 # Docker-MCP
 
-Docker-MCP 是一个基于[Docker Manager](https://github.com/DullJZ/docker-manager)的MCP服务器，使用FastMCP框架在Docker Manager之上构建，提供了对Docker容器的管理功能。
+Docker-MCP is an MCP server based on [Docker Manager](https://github.com/DullJZ/docker-manager), built using the FastMCP framework on top of Docker Manager's API, providing management capabilities for Docker containers.
 
-## 开始使用
+## Getting Started
 
-推荐使用uv工具管理依赖
+It is recommended to use the uv tool to manage dependencies:
 
 ```bash
 pip install uv
@@ -12,36 +12,41 @@ source venv/bin/activate
 uv run install
 ```
 
-修改`docker.py`中Docker Manager的API地址和鉴权Token
+Modify the Docker Manager API address and authentication token in `docker.py`.
 
-然后运行
+```python
+base_url = 'YOUR_DOCKER_MANAGER_BASE_URL'
+token = 'YOUR_DOCKER_MANAGER_API_TOKEN'
+```
+
+Then run:
 
 ```bash
 bash start.sh
 ```
 
-## 工具列表
+## Tool List
 
-| 工具名称 | 功能 |
-| -------- | ---- |
-| pull_image | 拉取指定镜像 |
-| list_images | 列出所有镜像 |
-| create_container | 创建容器 |
-| run_container_by_compose | 通过compose文件运行容器 |
-| fetch_container_logs | 获取容器日志 |
-| stop_container | 停止容器 |
-| start_container | 启动容器 |
-| restart_container | 重启容器 |
-| remove_container | 删除容器 |
-| fetch_container_info | 获取容器信息 |
-| create_exec_session | 创建交互式shell会话 |
-| execute_command_in_session | 在会话中执行命令 |
-| close_exec_session | 关闭交互式shell会话 |
-| get_more_session_output | 获取更多会话输出 |
-| wait_for_seconds | 等待指定秒数 |
-| create_network | 创建Docker网络 |
-| delete_network | 删除Docker网络 |
-| list_networks | 列出所有Docker网络 |
-| network_info | 获取网络信息 |
-| connect_network | 容器连接到网络 |
-| disconnect_network | 容器断开网络 |
+| Tool Name                  | Function                          |
+|---------------------------|-----------------------------------|
+| pull_image                 | Pull a specified image            |
+| list_images                | List all images                   |
+| create_container           | Create a container                |
+| run_container_by_compose   | Run a container using a compose file |
+| fetch_container_logs       | Fetch container logs              |
+| stop_container             | Stop a container                  |
+| start_container            | Start a container                 |
+| restart_container          | Restart a container               |
+| remove_container           | Remove a container                |
+| fetch_container_info       | Fetch container information       |
+| create_exec_session        | Create an interactive shell session|
+| execute_command_in_session | Execute a command in a session    |
+| close_exec_session         | Close an interactive shell session |
+| get_more_session_output    | Get more session output           |
+| wait_for_seconds           | Wait for a specified number of seconds |
+| create_network             | Create a Docker network           |
+| delete_network             | Delete a Docker network           |
+| list_networks              | List all Docker networks          |
+| network_info               | Get network information           |
+| connect_network            | Connect a container to a network  |
+| disconnect_network         | Disconnect a container from a network |
