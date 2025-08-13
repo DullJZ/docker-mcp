@@ -4,6 +4,22 @@
 
 Docker-MCP 是一个基于[Docker Manager](https://github.com/DullJZ/docker-manager)的MCP服务器，使用FastMCP框架在Docker Manager的API接口之上构建，提供了对Docker容器的管理功能。
 
+## 视频演示
+
+<details>
+  <summary>拉取镜像</summary>
+  
+https://github.com/user-attachments/assets/7549daee-c7c7-49af-a327-e9b952f22ed6
+
+</details>
+
+<details>
+  <summary>执行命令</summary>
+
+https://github.com/user-attachments/assets/d81150aa-b060-4cb5-8b0b-9ff383279514
+
+</details>
+
 ## 开始使用
 
 推荐使用uv工具管理依赖

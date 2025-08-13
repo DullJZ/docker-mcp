@@ -4,6 +4,22 @@ English | [简体中文](README.zh-cn.md)
 
 Docker-MCP is an MCP server based on [Docker Manager](https://github.com/DullJZ/docker-manager), built using the FastMCP framework on top of Docker Manager's API, providing management capabilities for Docker containers.
 
+## Video
+
+<details>
+  <summary>Pull Image</summary>
+  
+https://github.com/user-attachments/assets/7549daee-c7c7-49af-a327-e9b952f22ed6
+
+</details>
+
+<details>
+  <summary>Execute Command</summary>
+
+https://github.com/user-attachments/assets/d81150aa-b060-4cb5-8b0b-9ff383279514
+
+</details>
+
 ## Getting Started
 
 It is recommended to use the uv tool to manage dependencies:
